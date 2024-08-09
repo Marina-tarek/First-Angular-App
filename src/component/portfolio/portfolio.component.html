@@ -1,0 +1,60 @@
+<section class="portfolio flex justify-center items-center flex-col py-14 mt-6">
+    <div>
+        <h2 class="text-white text-center font-bold text-4xl mb-4 uppercase">portfolio component</h2>
+        <app-comman-line></app-comman-line>
+
+    </div>
+    <div class="porfolio-content ">
+        <div class="inner-portfolio flex flex-wrap justify-center items-center mx-5 p-4">
+            <div class="grid grid-cols-1 md:grid-cols-3  gap-3">
+                <div class="relative cart" (click)="open(imgSrc1)">
+                    <img class="h-auto max-w-full rounded-lg" [src]="imgSrc1" [alt]="imgAlt1">
+                    <div class="imag-info text-center absolute flex justify-center items-center">
+                        <i class="fa-solid fa-plus text-4xl font-extrabold text-white"></i>
+                    </div>
+                </div>
+                <div class="relative cart" (click)="open(imgSrc2)">
+                    <img class="h-auto max-w-full rounded-lg" [src]="imgSrc2" [alt]="imgAlt2">
+                    <div class="imag-info text-center absolute flex justify-center items-center">
+                        <i class="fa-solid fa-plus text-4xl font-extrabold text-white"></i>
+                    </div>
+                </div>
+                <div class="relative cart" (click)="open(imgSrc3)">
+                    <img class="h-auto max-w-full rounded-lg" [src]="imgSrc3" [alt]="imgAlt3">
+                    <div class="imag-info text-center absolute flex justify-center items-center">
+                        <i class="fa-solid fa-plus text-4xl font-extrabold text-white"></i>
+                    </div>
+                </div>
+                <div class="relative cart" (click)="open(imgSrc1)">
+                    <img class="h-auto max-w-full rounded-lg" [src]="imgSrc1" [alt]="imgAlt1">
+                    <div class="imag-info text-center absolute flex justify-center items-center">
+                        <i class="fa-solid fa-plus text-4xl font-extrabold text-white"></i>
+                    </div>
+                </div>
+                <div class="relative cart" (click)="open(imgSrc2)">
+                    <img class="h-auto max-w-full rounded-lg" [src]="imgSrc2" [alt]="imgAlt2">
+                    <div class="imag-info text-center absolute flex justify-center items-center">
+                        <i class="fa-solid fa-plus text-4xl font-extrabold text-white"></i>
+                    </div>
+                </div>
+                <div class="relative cart" (click)="open(imgSrc3)">
+                    <img class="h-auto max-w-full rounded-lg" [src]="imgSrc3" [alt]="imgAlt3">
+                    <div class="imag-info text-center absolute flex justify-center items-center">
+                        <i class="fa-solid fa-plus text-4xl font-extrabold text-white"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (isClick==true) {
+    <section class="box-layer bg-blue-500 bg-opacity-25 right-0 fixed left-0 top-0 bottom-0 flex justify-center items-center z-30" >
+        <div class="box w-1/2 relative">
+            <i class="fa-regular fa-circle-xmark absolute right-0 text-2xl p-1 cursor-pointer text-white" (click)="close()"></i>
+            <img [src]="imgSrc" class="w-full" alt="">
+        </div>
+        </section>
+}

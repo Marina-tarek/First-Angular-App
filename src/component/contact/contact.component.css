@@ -1,0 +1,7 @@
+.contact{
+    /* background-color: rgb(106, 149, 206); */
+    background-image: url(../../assets/image/contact.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

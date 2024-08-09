@@ -1,0 +1,6 @@
+#about{
+    min-height: 100vh;
+    background-image: url(../../assets/image/portfolio.svg);
+    background-position: center;
+    background-size: cover;
+}
